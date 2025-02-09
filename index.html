@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Hide Image</title>
+</head>
+<body>
+    <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl5g62LQ5qGzfTEZt4CTeG5xMqlOlTV6YwLw&s"style="width: 400px; height: 300px; "alt="Sample Image">
+
+    <script>
+        const image = document.getElementById("myImage");
+
+        image.addEventListener("mouseenter", function() {
+            image.style.opacity="0";
+        });
+
+        image.addEventListener("mouseleave", function() {
+            image.style.opacity = "1";
+        });
+    </script>
+</body>
+</html>
